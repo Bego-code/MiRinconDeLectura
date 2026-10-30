@@ -21,67 +21,87 @@
             <a href="index.html" class="activo">Inicio</a>
             <a href="libros.html"> Libros</a>
             <a href="#generos">Favoritos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="mailto:bego.cesmedo@gmail.com">Contacto</a>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h2>Bienvenidos a mi biblioteca</h2>
-            <p>
-                Leer nos permite viajar a otros mundos,
-                conocer personajes y descubrir nuevas ideas.
-            </p>
-            <p>
-                En esta página comparto algunos de mis libros
-                favoritos y mis recomendaciones.
-            </p>
-            <a href="libros.html" class="boton">
+            <div class="inicio-izquierda">
+                <h2>Bienvenidos a mi biblioteca</h2>
+                <p>
+                    Leer nos permite viajar a otros mundos,<br>
+                    conocer personajes y descubrir nuevas ideas.
+                </p>
+                <p>
+                    En esta página comparto algunos de mis libros<br>
+                    favoritos y mis recomendaciones.
+                </p>
+                <a href="libros.html" class="boton">
                 Descubre mis libros
-            </a>
-            <img src="img/biblioteca.jpg" alt="imagen biblioteca">
+                </a>
+            </div>
+            <div>
+                <img src="img/biblioteca.jpg" alt="imagen biblioteca">
+            </div>
         </section>
 
         <section id="generos">
-            <h2>Mis géneros favoritos</h2>
+            <div></div>
+                <h2>Mis géneros favoritos</h2>
+            </div>
 
+            <div class="tarjetas">
             <div class="genero">
+                <span class="icono-genero" aria-hidden="true">🏔️</span>
                 <h3>Aventura</h3>
                 <p>Historias llenas de retos increíbles.</p>
             </div>
 
             <div class="genero">
+                <span class="icono-genero" aria-hidden="true">🪄</span>
                 <h3>Fantasía</h3>
                 <p>Mundos imaginarios y personajes mágicos.</p>
             </div>
 
             <div class="genero">
+                <span class="icono-genero" aria-hidden="true">🚀</span>
                 <h3>Ciencia ficción</h3>
                 <p>Tecnología y nuevos mundos por descubrir.</p>
             </div>
 
             <div class="genero">
+                <span class="icono-genero" aria-hidden="true">🔍</span>
                 <h3>Misterio</h3>
                 <p>Enigmas que te mantienen en vilo.</p>
             </div>
+            </div>
             <section id="recomendacion">
-                <h2>Mi recomendacón especial</h2>
 
-                <img src="img/principito.webp" alt="Portada del libro El Principito" class="portada">
+                <div>
+                    <img src="img/principito.webp" alt="Portada del libro El Principito" class="portada">
+                </div>
 
-                <h3>El Principito</h3>
-                <p>Antoine de Saint-Exupéry</p>
-                <p>
-                    Una historia que invita a reflexionar
-                    sobre la amistad, la vida y lo realmente importante.
-                </p>
-                <p class="cita">
-                    Una lectura para recordar lo esencial.
-                </p>
+                <div>
+                    <h2>Mi recomendacón especial</h2>
+                    <h3>El Principito</h3>
+                    <p>Antoine de Saint-Exupéry</p>
+                    <p>
+                        Una historia que invita a reflexionar
+                        sobre la amistad,<br> la vida y lo realmente importante.
+                    </p>
+                    <p class="cita">
+                        Una lectura para recordar lo esencial.
+                    </p>
+                </div>
             </section>
     </main>
     <footer id="contacto">
         <p>Mi rincón de lectura · 2026</p>
-        <a href="mailto:bego.cesmedo@gmail.com">Contacto</a>
+        <div class="redes" aria-label="Redes sociales y correo">
+            <span role="img" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+            <span role="img" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></span>
+            <a href="mailto:bego.cesmedo@gmail.com" aria-label="Enviar correo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg></a>
+        </div>
     </footer>
 </body>
 

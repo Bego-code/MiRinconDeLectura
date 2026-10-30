@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgb(80, 0, 0);
+    background-color: #faf8f3;
     color: #263c59;
     margin: 0;
 }
@@ -19,7 +19,10 @@ p{
 }
 
 #cabecera{
-    background-color: rgb(80, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #263c59;
     color: white;
     text-align: center;
     padding: 25px;
@@ -27,11 +30,30 @@ p{
 
 #cabecera h1{
     font-size:36px;
-    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: -5px;
+    margin-left: 10px;
+    text-align: left;
 }
 
 #cabecera p{
     font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: -25px;
+    margin-left: 10px;
+
+
+}
+
+.icono-libro{
+    font-size: 70px;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.identidad{
+    display: flex;
 }
 
 
@@ -40,6 +62,10 @@ p{
 /*NAVEGACIÓN*/
 nav{
     margin-top: 20px;
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 40px;
+
 }
 
 nav a{
@@ -62,21 +88,42 @@ nav a.activo{
 /*BIENVENIDA*/
 
 #inicio{
+    display: flex;
     padding: 20px;
     background-color: white;
 }
+.inicio-izquierda{
+    margin-left: 10px;
+}
+
+#inicio h2{
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+#inicio p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(63, 63, 63);
+    margin-top: -20px;
+
+}
+
+#inicio > div:last-child{
+    margin-left: auto;
+}
 
 #inicio img{
-    width: 250px;
+    width: 450px;
     border-radius: 5px;
+
 }
 
 .boton{
+    font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     background-color: #1976b9;
     color: white;
     padding: 12px;
-    margin: 10px;
     text-decoration: none;
     border-radius: 6px;
 }
@@ -86,8 +133,16 @@ nav a.activo{
 #generos{
     background-color: #e8f2fb;
     padding: 20px;
-    text-align: center
+    margin-left: 15px;
+    text-align: left;
+    
 }
+
+#generos h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
 
 .genero{
     display: inline-block;
@@ -99,27 +154,68 @@ nav a.activo{
     padding: 15px;
     border: 1px solid #c5d8eb;
     border-radius: 8px;
+    text-align: center;
+}
+
+.tarjetas{
+    display: flex;
+
+}
+
+.icono-genero{
+    display: block;
+    font-size: 36px;
+    line-height: 1;
 }
 
 .genero h3{
     color: #263c59;
+
 }
 
 #recomendacion{
+    display: flex;
+    gap: 40px;
     background-color: #fce8ec;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
 }
 
+#recomendacion img{
+    width: auto;
+    height: 230px;
+    margin: 30px;
+}
+
+#recomendacion h2{
+    margin-top: 60px;
+}
+
+#recomendacion h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(63, 63, 63);
+    margin-top: -20px;
+}
+
+#recomendacion p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(63, 63, 63);
+    margin-top: -10px;
+
+}
+
+#recomendacion .cita{
+    color: #b00000d3;
+    text-align: center;
+    margin: 30px auto 0;
+    background-color: #fff5e5;
+}
+
 .portada{
     width: 130px;
     border-radius: 5px;
 }
-.cita{
-    background-color: #fff5e5;
-}
-
 /*CATÁLOGO*/
 #catalogo{
     text-align: center;
@@ -161,6 +257,8 @@ nav a.activo{
 
 /*FOOTER*/
 footer{
+    display: flex;
+    align-items: center;
     background-color: #263c59;
     color: white;
     text-align: center;
@@ -169,4 +267,34 @@ footer{
 
 footer a{
     color: white;
+}
+
+footer p{
+    margin-right: -50px;
+    justify-content: right;
+    text-align:center;
+    margin: 0;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: auto;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+.redes svg{
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
